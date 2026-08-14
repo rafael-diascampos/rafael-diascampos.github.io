@@ -242,6 +242,11 @@ code { font-size: .9em; }
 }
 .passo .t { color: var(--ink); font-size: 1.02rem; line-height: 1.45; }
 .passo .t strong { color: var(--accent2); font-weight: 700; }
+.passo .t ul {
+  margin: 8px 0 0;
+  padding-left: 1.2rem;
+}
+.passo .t li { margin: 4px 0; }
 .block.passos-block {
   border-color: #5eead4;
   background: linear-gradient(180deg, #f0fdfa 0%, #fff 48px);
