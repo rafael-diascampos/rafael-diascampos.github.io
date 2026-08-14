@@ -213,23 +213,40 @@ code { font-size: .9em; }
 }
 .passo {
   position: relative;
-  background: #f0fdfa;
+  background: #fff;
   border: 1px solid #99f6e4;
-  border-radius: 12px;
-  padding: 10px 12px 10px 14px;
-  margin: 0 0 8px;
+  border-radius: 14px;
+  padding: 14px 16px 14px 18px;
+  margin: 0 0 10px;
+  box-shadow: 0 1px 2px rgba(15,118,110,.06);
 }
 .passo::before {
   content: "";
-  position: absolute; left: -16px; top: 14px;
-  width: 10px; height: 10px; border-radius: 99px;
+  position: absolute; left: -16px; top: 18px;
+  width: 12px; height: 12px; border-radius: 99px;
   background: var(--accent); border: 2px solid var(--bg);
 }
 .passo .n {
-  display: inline-block; min-width: 1.4em;
-  font-weight: 700; color: var(--accent2); margin-right: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: var(--accent2);
+  color: #fff;
+  font-weight: 700;
+  font-size: .85rem;
+  vertical-align: middle;
 }
-.passo .t { color: var(--ink); }
+.passo .t { color: var(--ink); font-size: 1.02rem; line-height: 1.45; }
+.passo .t strong { color: var(--accent2); font-weight: 700; }
+.block.passos-block {
+  border-color: #5eead4;
+  background: linear-gradient(180deg, #f0fdfa 0%, #fff 48px);
+}
+.block.passos-block h2 { color: #0f766e; font-size: .8rem; }
 .next-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
