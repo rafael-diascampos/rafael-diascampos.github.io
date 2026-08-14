@@ -135,23 +135,25 @@ code { font-size: .9em; }
   background: var(--accent); border: 2px solid var(--bg);
 }
 .step .num {
-  display: inline-block; min-width: 2.1em;
-  font-weight: 700; color: var(--accent2); font-variant-numeric: tabular-nums;
+  display: block;
+  font-weight: 800;
+  color: var(--accent2);
+  font-size: .95rem;
+  margin-bottom: 4px;
 }
 .step .who {
-  display: inline-block; margin-left: 6px;
+  display: block;
   font-size: .72rem; font-weight: 600; letter-spacing: .04em;
   text-transform: uppercase; color: var(--muted);
 }
-.step .what { display: block; margin-top: 2px; font-size: .98rem; }
-.step .rop { display: block; margin-top: 4px; font-size: .8rem; color: var(--accent); }
+.step .what { display: block; margin-top: 2px; font-size: .98rem; color: var(--ink); }
 
 .fork { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0 10px; }
 .fork .step { margin: 0; }
 .fork .step::before { left: -19px; }
 .step.stop { background: #fef2f2; border-color: #fecaca; }
 .step.stop::before { background: #b91c1c; }
-.step.stop .num, .step.stop .rop { color: #9a3412; }
+.step.stop .num { color: #9a3412; }
 .step.go { background: #ecfdf5; border-color: #99f6e4; }
 .step.go::before { background: #0f766e; }
 
