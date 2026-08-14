@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROP-PREP-002 — Preparação (Henrique) · Rotinas Editora UFTM</title>
-<link rel="stylesheet" href="../style.css?v=3"/>
+<title>Preparação (Henrique) · Rotinas Editora UFTM</title>
+<link rel="stylesheet" href="../style.css?v=4"/>
 </head>
 <body>
 <header class="top">
@@ -14,68 +14,30 @@
     <a href="https://rafael-diascampos.github.io/">Portfólio</a>
   </nav>
 </header>
-<main class="wrap">
-  <p class="crumb"><a href="../index.html">Indice</a> · ROP</p>
-  <div class="hero"><div class="code">ROP-PREP-002</div><h1>ROP-PREP-002 — Preparação (Henrique)</h1></div>
-  <article class="card body"><h1>ROP-PREP-002 — Preparação (Henrique)</h1>
-<h2>Quando usar</h2>
-<p>E-mail da Amanda com o arquivo (<code>Normalizado Amanda</code>).</p>
-<h2>Próximo arquivo</h2>
-<ul>
-<li>ROP-SEC-040</li>
-</ul>
-<p>Dois olhares, a mesma obra. O Henrique lê o conjunto (compreensão global). A Norma trata o detalhe técnico (estrutura, autores, fechamento do arquivo). Não é uma hierarquia de capacidade: são funções diferentes. Por isso o <code>Preparado Henrique</code> fica no OMP para <strong>editores e Direção</strong>, não para a revisão de texto.</p>
-<table>
-<thead>
-<tr>
-<th>Campo</th>
-<th>Conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Objetivo</strong></td>
-<td>Registrar no OMP o olhar de conjunto da obra, para editores e Direção.</td>
-</tr>
-<tr>
-<td><strong>Gatilho</strong></td>
-<td>E-mail da Amanda com o arquivo.</td>
-</tr>
-<tr>
-<td><strong>Responsável</strong></td>
-<td>Henrique (trabalho); Secretaria (sobe no OMP)</td>
-</tr>
-<tr>
-<td><strong>Entradas</strong></td>
-<td>Arquivo por e-mail (enviado pela Amanda). Canal: e-mail (Henrique não opera no OMP).</td>
-</tr>
-<tr>
-<td><strong>Passos</strong></td>
-<td>1. Receber o arquivo por e-mail (não via designação OMP).<br>2. Fazer a leitura de conjunto da obra.<br>3. Devolver por e-mail a sec.editora@uftm.edu.br.<br>4. Secretaria executa ROP-SEC-040 (sobe <code>Preparado Henrique</code>).</td>
-</tr>
-<tr>
-<td><strong>Saídas</strong></td>
-<td><code>Preparado Henrique</code> no OMP (via Sec), visível a editores e Direção.</td>
-</tr>
-<tr>
-<td><strong>Critério de conclusão</strong></td>
-<td>E-mail enviado à Sec e arquivo no OMP.</td>
-</tr>
-<tr>
-<td><strong>Registros</strong></td>
-<td>E-mail; OMP (via Sec)</td>
-</tr>
-<tr>
-<td><strong>Prazo orientador</strong></td>
-<td>Fora do escopo / a definir</td>
-</tr>
-<tr>
-<td><strong>Base normativa</strong></td>
-<td>Fluxo Edição de texto (decisão Direção 2026-08-13)</td>
-</tr>
-</tbody>
-</table>
-<p>Voltar ao <a href="../mapas/fluxo-livro.html">roteiro do livro</a> ou ao <a href="../index.html">índice</a>.</p></article>
+<main class="wrap wrap-wide">
+  <p class="crumb"><a href="../index.html">Indice</a> · <a href="../mapas/fluxo-livro.html">Caminho</a> · ROP</p>
+  <div class="hero"><div class="code">ROP-PREP-002</div><h1>Preparação (Henrique)</h1></div>
+  
+<div class="rop-layout">
+  <div class="meta-row"><div class="meta"><span class="k">Quando usar</span><span class="v">E-mail da Amanda com o arquivo (`Normalizado Amanda`).</span></div><div class="meta"><span class="k">Responsável</span><span class="v">Henrique (trabalho); Secretaria (sobe no OMP)</span></div><div class="meta"><span class="k">Gatilho</span><span class="v">E-mail da Amanda com o arquivo.</span></div><div class="meta"><span class="k">Objetivo</span><span class="v">Registrar no OMP o olhar de conjunto da obra, para editores e Direção.</span></div></div>
+  <section class="block">
+    <h2>Passos</h2>
+    <div class="passos"><div class="passo"><span class="n">1.</span><span class="t">Receber o arquivo por e-mail (não via designação OMP).</span></div><div class="passo"><span class="n">2.</span><span class="t">Fazer a leitura de conjunto da obra.</span></div><div class="passo"><span class="n">3.</span><span class="t">Devolver por e-mail a sec.editora@uftm.edu.br.</span></div><div class="passo"><span class="n">4.</span><span class="t">Secretaria executa <a href="./ROP-SEC-040.html"><code>ROP-SEC-040</code></a> (sobe `Preparado Henrique`).</span></div></div>
+  </section>
+  <section class="block">
+    <h2>Próximo</h2>
+    <div class="next-grid"><a href="./ROP-SEC-040.html"><span class="code">ROP-SEC-040</span><span class="note">próximo passo</span></a></div>
+  </section>
+  <section class="block">
+    <h2>Detalhes</h2>
+    <div class="side-grid"><div class="side"><span class="k">Entradas</span><span class="v">Arquivo por e-mail (enviado pela Amanda). Canal: e-mail (Henrique não opera no OMP).</span></div><div class="side"><span class="k">Saídas</span><span class="v">`Preparado Henrique` no OMP (via Sec), visível a editores e Direção.</span></div><div class="side"><span class="k">Critério de conclusão</span><span class="v">E-mail enviado à Sec e arquivo no OMP.</span></div><div class="side"><span class="k">Registros</span><span class="v">E-mail; OMP (via Sec)</span></div><div class="side"><span class="k">Prazo orientador</span><span class="v">Fora do escopo / a definir</span></div><div class="side"><span class="k">Base normativa</span><span class="v">Fluxo Edição de texto (decisão Direção 2026-08-13)</span></div></div>
+  </section>
+  <div class="backbar">
+    <a href="../mapas/fluxo-livro.html">Voltar ao caminho</a>
+    <a href="../index.html">Índice</a>
+  </div>
+</div>
+
 </main>
 <footer class="foot">Editora UFTM · Rotinas</footer>
 </body>

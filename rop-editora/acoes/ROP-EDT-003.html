@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ROP-EDT-003 — OK do editor e envio para Editoração · Rotinas Editora UFTM</title>
-<link rel="stylesheet" href="../style.css?v=3"/>
+<title>OK do editor e envio para Editoração · Rotinas Editora UFTM</title>
+<link rel="stylesheet" href="../style.css?v=4"/>
 </head>
 <body>
 <header class="top">
@@ -14,68 +14,30 @@
     <a href="https://rafael-diascampos.github.io/">Portfólio</a>
   </nav>
 </header>
-<main class="wrap">
-  <p class="crumb"><a href="../index.html">Indice</a> · ROP</p>
-  <div class="hero"><div class="code">ROP-EDT-003</div><h1>ROP-EDT-003 — OK do editor e envio para Editoração</h1></div>
-  <article class="card body"><h1>ROP-EDT-003 — OK do editor e envio para Editoração</h1>
-<h2>Quando usar</h2>
-<p>Débora subiu <code>Revisado Débora</code> e notificou o editor da obra (e a Direção).</p>
-<h2>Próximo arquivo</h2>
-<ul>
-<li>ROP-PROD-001</li>
-<li>ROP-PROD-012</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Campo</th>
-<th>Conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Objetivo</strong></td>
-<td>Aprovar o texto da obra e mandá-la para Editoração. O editor não define como a obra será produzida (coleção, cores, suporte: Direção com a Viviane).</td>
-</tr>
-<tr>
-<td><strong>Gatilho</strong></td>
-<td><code>Revisado Débora</code> no OMP; notificação da Débora.</td>
-</tr>
-<tr>
-<td><strong>Responsável</strong></td>
-<td>Editor da obra (chefe ou associado)</td>
-</tr>
-<tr>
-<td><strong>Entradas</strong></td>
-<td><code>Revisado Débora</code> (texto fechado); <code>Preparado Henrique</code> (olhar de conjunto, para editores e Direção).</td>
-</tr>
-<tr>
-<td><strong>Passos</strong></td>
-<td>1. Analisar se o texto está apto (usar <code>Revisado Débora</code>; o <code>Preparado Henrique</code> é leitura de conjunto, não substitui o da Norma).<br>2. Se não ok: devolver/apontar no OMP (não avançar).<br>3. Se ok: registrar OK no sistema.<br>4. Avançar a obra para a etapa Editoração.<br>5. Designar Viviane e notificar. Não registrar coleção, cores, suporte nem especificações de produção.</td>
-</tr>
-<tr>
-<td><strong>Saídas</strong></td>
-<td>Obra em Editoração; Viviane designada.</td>
-</tr>
-<tr>
-<td><strong>Critério de conclusão</strong></td>
-<td>OK do texto + Editoração + designação Viviane.</td>
-</tr>
-<tr>
-<td><strong>Registros</strong></td>
-<td>OMP</td>
-</tr>
-<tr>
-<td><strong>Prazo orientador</strong></td>
-<td>Fora do escopo / a definir</td>
-</tr>
-<tr>
-<td><strong>Base normativa</strong></td>
-<td>Arts. 27–28; fluxo pós-texto (decisão Direção 2026-08-13)</td>
-</tr>
-</tbody>
-</table>
-<p>Voltar ao <a href="../mapas/fluxo-livro.html">roteiro do livro</a> ou ao <a href="../index.html">índice</a>.</p></article>
+<main class="wrap wrap-wide">
+  <p class="crumb"><a href="../index.html">Indice</a> · <a href="../mapas/fluxo-livro.html">Caminho</a> · ROP</p>
+  <div class="hero"><div class="code">ROP-EDT-003</div><h1>OK do editor e envio para Editoração</h1></div>
+  
+<div class="rop-layout">
+  <div class="meta-row"><div class="meta"><span class="k">Quando usar</span><span class="v">Débora subiu `Revisado Débora` e notificou o editor da obra (e a Direção).</span></div><div class="meta"><span class="k">Responsável</span><span class="v">Editor da obra (chefe ou associado)</span></div><div class="meta"><span class="k">Gatilho</span><span class="v">`Revisado Débora` no OMP; notificação da Débora.</span></div><div class="meta"><span class="k">Objetivo</span><span class="v">Aprovar o texto da obra e mandá-la para Editoração. O editor não define como a obra será produzida (coleção, cores, suporte: Direção com a Viviane).</span></div></div>
+  <section class="block">
+    <h2>Passos</h2>
+    <div class="passos"><div class="passo"><span class="n">1.</span><span class="t">Analisar se o texto está apto (usar `Revisado Débora`; o `Preparado Henrique` é leitura de conjunto, não substitui o da Norma).</span></div><div class="passo"><span class="n">2.</span><span class="t">Se não ok: devolver/apontar no OMP (não avançar).</span></div><div class="passo"><span class="n">3.</span><span class="t">Se ok: registrar OK no sistema.</span></div><div class="passo"><span class="n">4.</span><span class="t">Avançar a obra para a etapa Editoração.</span></div><div class="passo"><span class="n">5.</span><span class="t">Designar Viviane e notificar. Não registrar coleção, cores, suporte nem especificações de produção.</span></div></div>
+  </section>
+  <section class="block">
+    <h2>Próximo</h2>
+    <div class="next-grid"><a href="./ROP-PROD-001.html"><span class="code">ROP-PROD-001</span><span class="note">próximo passo</span></a><a href="./ROP-PROD-012.html"><span class="code">ROP-PROD-012</span><span class="note">próximo passo</span></a></div>
+  </section>
+  <section class="block">
+    <h2>Detalhes</h2>
+    <div class="side-grid"><div class="side"><span class="k">Entradas</span><span class="v">`Revisado Débora` (texto fechado); `Preparado Henrique` (olhar de conjunto, para editores e Direção).</span></div><div class="side"><span class="k">Saídas</span><span class="v">Obra em Editoração; Viviane designada.</span></div><div class="side"><span class="k">Critério de conclusão</span><span class="v">OK do texto + Editoração + designação Viviane.</span></div><div class="side"><span class="k">Registros</span><span class="v">OMP</span></div><div class="side"><span class="k">Prazo orientador</span><span class="v">Fora do escopo / a definir</span></div><div class="side"><span class="k">Base normativa</span><span class="v">Arts. 27–28; fluxo pós-texto (decisão Direção 2026-08-13)</span></div></div>
+  </section>
+  <div class="backbar">
+    <a href="../mapas/fluxo-livro.html">Voltar ao caminho</a>
+    <a href="../index.html">Índice</a>
+  </div>
+</div>
+
 </main>
 <footer class="foot">Editora UFTM · Rotinas</footer>
 </body>
